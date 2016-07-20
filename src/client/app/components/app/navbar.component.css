@@ -1,10 +1,15 @@
 :host {
-  border-color: #e1e1e1;
-  border-style: solid;
-  border-width: 0 0 1px;
-  display: block;
-  height: 48px;
-  padding: 0 16px;
+
+}
+
+.collapseMenu .bg-inverse {
+  margin-top: 3.75%;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.collapseMenu{
+  position: relative;
 }
 
 nav a {
@@ -12,11 +17,15 @@ nav a {
   font-size: 14px;
   font-weight: 500;
   line-height: 48px;
-  margin-right: 20px;
   text-decoration: none;
   vertical-align: middle;
+  padding: 0 6px;
 }
 
+.navbar-toggler{
+  margin-top: 6px;
+  color: white;
+}
 nav a.router-link-active {
   color: #106cc8;
 }

@@ -9,7 +9,7 @@ import {MULTILINGUAL_PROVIDERS, MultilingualStateI, multilingualReducer} from '.
 export interface AppStoreI {
   i18n: MultilingualStateI;
   names: Array<string>;
-};
+}
 
 export const APP_PROVIDERS: any[] = [
   MULTILINGUAL_PROVIDERS,

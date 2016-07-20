@@ -1,0 +1,88 @@
+:host {
+}
+
+.filter-black::before {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.parallax {
+    width: 100%;
+    display: block;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.filter-black:before, .filter-black:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+.parallax .parallax-image {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+.parallax .parallax-image img {
+    width: 100%;
+}
+.login-content .container{
+    padding-top: 8%;
+}
+.login-content .card{
+    border-radius: 10px;
+    box-shadow: 0 28px 57px rgba(0, 0, 0, 0.72);
+}
+.login-content h1{
+    color: white;
+    font-family: "montserratblack", sans-serif;
+    font-size: 42px;
+}
+.login-form label{
+    font-family: "montserratlight", sans-serif;
+    font-size: 14px;
+}
+.login-form label:not(.c-checkbox){
+    padding-left: 10px;
+    color: #a8acb9;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.login-form label.c-checkbox{
+    color: #4f5362;
+}
+
+.login-form .form-control{
+    background-color: #eff0f4;
+    font-family: "montserratlight", sans-serif;
+    border-radius: 21px;
+    height: 42px;
+    color: #4f5362;
+    font-size: 14px;
+    line-height: 28px;
+    border: 0;
+}
+.login-form .form-control:focus{
+    background-color: white;
+    color: #a8acb9;
+    box-shadow: 0 9px 18px rgba(173, 178, 199, 0.62);
+}
+.login-form .btn{
+    margin-top: 30px;
+    background-color: #43cb83;
+    border-radius: 25px;
+    border-color: #43cb83;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "montserratlight", sans-serif;
+}
+.login-form .c-input>input~.c-indicator {
+    border-radius: 50%;
+}
+.login-form .c-input>input:checked~.c-indicator {
+    background-color: #43cb83;
+}

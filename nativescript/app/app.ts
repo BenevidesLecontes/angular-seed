@@ -23,19 +23,22 @@ import {NS_APP_PROVIDERS} from './shared/nativescript/index';
 import {routes} from './app/components/app/app.routes';
 import {NSAppComponent} from './pages/app/app.component';
 import {WindowNative, ModalNative, NSHttpService} from './shared/core/index';
-  
+import {PAGE} from "./app/frameworks/core/tokens/opakeToken";
+import {Page} from "ui/page";
+
 // Uncomment when ready to publish to App Stores:
 // enableProdMode();
 
 nativeScriptBootstrap(NSAppComponent, [
-  provide(WindowService, { useClass: WindowNative }),
-  ModalNative,
-  provide(HttpService, { useClass: NSHttpService }),
-  provide(TranslateLoader, {
-    useFactory: () => {
-      return new TNSTranslateLoader('assets/i18n');
-    }
-  }),
-  NS_APP_PROVIDERS,
-  nsProvideRouter(routes, { enableTracing: false })
+    provide(WindowService, {useClass: WindowNative}),
+    provide(PAGE, {useClass: Page}),
+    ModalNative,
+    provide(HttpService, {useClass: NSHttpService}),
+    provide(TranslateLoader, {
+        useFactory: () => {
+            return new TNSTranslateLoader('assets/i18n');
+        }
+    }),
+    NS_APP_PROVIDERS,
+    nsProvideRouter(routes, {enableTracing: false})
 ]);

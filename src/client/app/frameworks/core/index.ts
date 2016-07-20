@@ -5,10 +5,10 @@ import {HTTP_PROVIDERS} from '@angular/http';
 import {LogService} from './services/log.service';
 import {HttpService} from './services/http.service';
 
-export const CORE_PROVIDERS: any[] = [
-  HTTP_PROVIDERS,
-  LogService, 
-  HttpService
+export const CORE_PROVIDERS:any[] = [
+    HTTP_PROVIDERS,
+    LogService,
+    HttpService
 ];
 
 // decorators
@@ -31,3 +31,5 @@ export * from './services/window.service';
 
 // directives
 export * from './directives/platform.directive';
+//Tokens
+export * from './tokens/opakeToken';
