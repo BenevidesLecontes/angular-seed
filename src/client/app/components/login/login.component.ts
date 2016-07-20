@@ -3,9 +3,8 @@
  */
 import {BaseComponent} from '../../frameworks/core/index';
 import {Inject} from "@angular/core";
-
-import {CoreConfigService} from "../../frameworks/core/services/core-config.service";
 import {PAGE} from "../../frameworks/core/tokens/opakeToken";
+import {CoreConfigService} from "../../frameworks/core/services/core-config.service";
 @BaseComponent({
     moduleId: module.id,
     selector: 'sd-login',
@@ -13,11 +12,10 @@ import {PAGE} from "../../frameworks/core/tokens/opakeToken";
     styleUrls: ['login.component.css']
 })
 export class LoginComponent {
-    constructor(@Inject(PAGE) private page:any) {
-        console.log(CoreConfigService.IS_MOBILE_NATIVE());
-        if (CoreConfigService.IS_MOBILE_NATIVE()) {
+    constructor(@Inject (PAGE) private page:any) {
+        if (CoreConfigService.IS_MOBILE_NATIVE) {
             this.page.actionBarHidden = true;
-            this.page.backgroundImage = "res://bg_login";
+            this.page.backgroundImage = this.page.ios ? "res://bg_login.jpg" : "res://bg_login";
         }
     }
 }

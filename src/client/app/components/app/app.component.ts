@@ -10,15 +10,16 @@ import {NavbarComponent} from './navbar.component';
 import {ToolbarComponent} from './toolbar.component';
 
 @RouteComponent({
-  moduleId: module.id,
-  selector: 'sd-app',
-  viewProviders: [NameListService],
-  templateUrl: 'app.component.html',
-  directives: [LangSwitcherComponent, NavbarComponent, ToolbarComponent, PlatformDirective],
-  changeDetection: ChangeDetectionStrategy.Default // Everything else uses OnPush
+    moduleId: module.id,
+    selector: 'sd-app',
+    viewProviders: [NameListService],
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.css'],
+    directives: [LangSwitcherComponent, NavbarComponent, ToolbarComponent, PlatformDirective],
+    changeDetection: ChangeDetectionStrategy.Default // Everything else uses OnPush
 })
 export class AppComponent {
-  constructor(public analytics: AnalyticsService) {
+    constructor(public analytics:AnalyticsService) {
 
-  }
+    }
 }

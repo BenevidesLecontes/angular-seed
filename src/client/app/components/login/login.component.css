@@ -86,3 +86,6 @@
 .login-form .c-input>input:checked~.c-indicator {
     background-color: #43cb83;
 }
+.login-form .c-input>input:focus~.c-indicator{
+    box-shadow: 0 0 0 .075rem #fff,0 0 0 .2rem #43cb83;
+}

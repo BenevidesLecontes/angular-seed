@@ -1,10 +1,11 @@
-<ActionBar title="Login">
-</ActionBar>
-<StackLayout>
+    <GridLayout backgroundImage="res://bg_login.jpg">
+        <StackLayout >
+    <Image src="res://logo_login" stretch="none" horizontalAlignment="center"></Image>
     <TextField hint="Email Address" keyboardType="email"
                autocorrect="false" autocapitalizationType="none"></TextField>
     <TextField hint="Password" secure="true"></TextField>
 
-    <Button  class="submit-button">Entrar</Button>
-    <Button >Voltar</Button>
+    <Button [text]="isLoggingIn ? 'Entrar' : 'Cadastrar-se'" class="submit-button" (tap)="submit()"></Button>
+    <Button [text]="isLoggingIn ? 'Cadastrar-se' : 'Voltar'" (tap)="toggleDisplay()"></Button>
 </StackLayout>
+    </GridLayout>
