@@ -1,17 +1,12 @@
 StackLayout {
-    margin-left: 30;
-    margin-right: 30;
-    padding-bottom: 15;
-    background-color: white;
-    height: 340;
-    border-radius: 10;
+    width: 100%;
 }
 Image {
     margin-top: 5;
     margin-bottom: 20;
 }
 TextField {
-    border-radius: 21;
+    border-radius: 5;
     font-size: 13;
     margin-bottom: 10;
     background-color: #eff0f4;
@@ -20,7 +15,14 @@ TextField {
     border-width: 0;
     padding: 8 16 8 16;
 }
-
+.cardStyle{
+    height: 340;
+    margin-left: 30;
+    margin-right: 30;
+    padding-bottom: 15;
+    background-color: white;
+    border-radius: 10;
+}
 
 Button {
     height: 40;
@@ -29,7 +31,7 @@ Button {
 .submit-button {
     background-color: #43cb83;
     width: 90%;
-    border-radius: 21;
-    padding: 8 16 8 16;
+    border-radius: 5;
+    padding: 10 16 10 16;
     margin-top: 20
 }

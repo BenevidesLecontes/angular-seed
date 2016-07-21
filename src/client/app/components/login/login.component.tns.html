@@ -1,12 +1,13 @@
-<GridLayout backgroundImage="res://bg_login.jpg" stretch="aspectFit">
+<GridLayout backgroundImage="res://bg_login" stretch="aspectFit">
 
-    <CardView #materialcardview shadowColor="#FE00FC" elevation="10" margin="10">
+    <CardView #materialcardview shadowColor="#000000" class="cardStyle"  elevation="10" shadowOpacity ="1" shadowOffsetWidth ="10"
+              shadowOffsetHeight ="10">
         <StackLayout>
             <Image src="res://logo_login" stretch="none" horizontalAlignment="center"></Image>
             <TextField hint="Email Address" keyboardType="email"
                        autocorrect="false" autocapitalizationType="none"></TextField>
             <TextField hint="Password" secure="true"></TextField>
-
+            <Switch checked="true"></Switch>
             <Button text="Entrar" class="submit-button" (tap)="submit()"></Button>
         </StackLayout>
     </CardView>
