@@ -41,7 +41,8 @@
         "rxjs": "5.0.0-beta.6",
         "tns-core-modules": "^2.0.1",
         "url": "0.10.3",
-        "zone.js": "^0.6.12"
+        "zone.js": "^0.6.12",
+        "nativescript-cardview": "~1.0.1"
     },
     "devDependencies": {
         "babel-traverse": "6.9.0",

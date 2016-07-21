@@ -5,7 +5,7 @@
 import {nativeScriptBootstrap} from 'nativescript-angular/application';
 import {NS_ROUTER_DIRECTIVES, nsProvideRouter} from 'nativescript-angular/router';
 
-// angular 
+// angular
 import {provide, enableProdMode} from '@angular/core';
 
 // libs
@@ -25,6 +25,8 @@ import {NSAppComponent} from './pages/app/app.component';
 import {WindowNative, ModalNative, NSHttpService} from './shared/core/index';
 import {PAGE} from "./app/frameworks/core/tokens/opakeToken";
 import {Page} from "ui/page";
+import {registerElement} from "nativescript-angular/element-registry";
+registerElement("CardView", () => require("nativescript-cardview").CardView);
 
 // Uncomment when ready to publish to App Stores:
 // enableProdMode();
